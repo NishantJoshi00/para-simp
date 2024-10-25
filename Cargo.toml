@@ -1,0 +1,25 @@
+[package]
+name = "simp"
+description = "Simulate Payments"
+version = "0.1.0"
+edition = "2021"
+default-run = "cli"
+
+[dependencies]
+serde = { version = "1.0.213", features = ["derive"] }
+serde_json = "1.0.132"
+anyhow = "1.0.91"
+rand = "0.8.5"
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.10", features = ["rt-multi-thread", "macros"] }
+axum = "0.7.7"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+
+[[bin]]
+name = "cli"
+path = "src/app/cli.rs"
+
+[[bin]]
+name = "server"
+path = "src/app/server.rs"

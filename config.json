@@ -1,0 +1,12 @@
+{
+  "user": {
+    "payment_method": {
+      "card": 40,
+      "cash": 60
+    }
+  },
+  "psp": {
+    "config": {},
+    "otherwise": "success"
+  }
+}
