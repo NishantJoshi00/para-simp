@@ -3,7 +3,7 @@ name = "simp"
 description = "Simulate Payments"
 version = "0.1.0"
 edition = "2021"
-default-run = "cli"
+default-run = "simp"
 
 [dependencies]
 serde = { version = "1.0.213", features = ["derive"] }
@@ -17,9 +17,9 @@ tracing = "0.1.40"
 tracing-subscriber = "0.3.18"
 
 [[bin]]
-name = "cli"
+name = "simp"
 path = "src/app/cli.rs"
 
 [[bin]]
-name = "server"
+name = "simp-server"
 path = "src/app/server.rs"
